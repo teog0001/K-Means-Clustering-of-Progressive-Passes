@@ -38,8 +38,9 @@ Using Kmeans, to identify the optimal number of clusters for meaningful analysis
 | pass_length       | in yards                                              | numerical data                  |
 |                   |                                                       |                                 |
 
-# Model selection
-
+# Model Selection
+I have chosen Kmeans clustering after running the cleaned data through Kmeans + PCA, and DBscan.
+DBscan isn't a good clustering method to use because it classifies majority of the data as 1 big cluster and i wasn't able to gather any insights from the cluster.
 
 # Team Analysis
 Plotted percentage of completed passes over total passes for England over World Cup 19 and Euro 22. 84% passes completed in 2019 compared to 91% passes completed in 2022.
@@ -98,11 +99,12 @@ Data like through passes on goal, passing sequences leading to goal chances, can
 
 ### Notebook Contents
 1. 01_Data Extraction & Cleaning
-2. 02a_Capstone EDA & Modelling [Team Analysis WC19]
-3. 02b_Capstone EDA & Modelling [Team Analysis Euro22]
-4. 02c_Capstone EDA & Modelling [player analysis Keira Walsh wc19]
-5. 02d_Capstone EDA & Modelling [player analysis Keira Walsh euro 22]
-6. 02e_Capstone EDA & Modelling [player analysis Leah Williamson euro 22]
+2. 02a_EDA & Modelling [Team Analysis WC19]
+3. 02b_EDA & Modelling [Team Analysis Euro22]
+4. 02c_EDA & Modelling [player analysis Keira Walsh wc19]
+5. 02d_EDA & Modelling [player analysis Keira Walsh euro 22]
+6. 02e_EDA & Modelling [player analysis Leah Williamson euro 22]
+7. 03_KMeans + PCA & DBScan
 
 
 ---
