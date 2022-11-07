@@ -28,15 +28,15 @@ Using Kmeans, to identify the optimal number of clusters for meaningful analysis
 
 # Data Cleaning 
 
-| Features Used     | Explanation                                           | Data Cleaning                   |
-| period            |                                                       | ---                             |
-| location          | location of starting pass                             | in a form of [x,y] to loop over |
-| pass_end location | location of end pass                                  | the rows and separate x,y       |
-| pass_outcome      | complete or incomplete                                | categorical data, get_dummies   |
-| pass_angle        | +ve indicates clockwise, -ve indicates anti clockwise | numerical data                  |
-| pass_height       | ground, low or high pass                              | categorical data, get_dummies   |
-| pass_length       | in yards                                              | numerical data                  |
-|                   |                                                       |                                 |
+| Features Used     | Explanation                                           | Data Cleaning                                             |
+|-------------------|-------------------------------------------------------|-----------------------------------------------------------|
+| period            | first / second half                                   | -                                                         |
+| location          | location of starting pass                             | in a form of [x,y] to loop over the rows and separate x,y |
+| pass_end location | location of end pass                                  | as above                                                  |
+| pass_outcome      | complete or incomplete                                | categorical data, get_dummies                             |
+| pass_angle        | +ve indicates clockwise, -ve indicates anti clockwise | numerical data                                            |
+| pass_height       | ground, low or high pass                              | categorical data, get_dummies                             |
+| pass_length       | in yards                                              | numerical data                                            |
 
 # Model Selection
 I have chosen Kmeans clustering after running the cleaned data through Kmeans + PCA, and DBscan.
